@@ -159,5 +159,9 @@
         position: relative;
         top: 10px;
       }
+
+      .menu-position{
+          display: flex !important;
+      }
     }
    
