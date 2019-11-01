@@ -9,10 +9,28 @@
 <head>
     <title>Dr. Chakor Vora</title>
     <meta charset="utf-8" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151334386-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-151334386-1');
+        </script>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/custom.css" />
     <noscript>
         <link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+        <style>
+            .firstReview{
+        color: #999!important;
+        text-align: center!important;
+        font-size: 14px!important;
+        padding: 60px 0!important;
+    }
+        </style>
 </head>
 
 <body class="is-preload">
@@ -24,6 +42,7 @@
             <ul style="margin:auto;">
                 <li><a href="index.html">Home</a></li>
                 <!-- <li><a href="knowthedoc.html">Know The Doctor</a></li> -->
+                <li><a href="knowcancer.html">Know Cancer</a></li>
                 <li><a href="achievements.html">Achievements</a></li>
                 <li><a href="index.html#three">Contact</a></li>
             </ul>
@@ -67,10 +86,24 @@
                         </ul>
                     </div>
                 </section>
-
+                <section>
+                        <div id="wpac-review"></div>
+                            <script type="text/javascript">
+                            wpac_init = window.wpac_init || [];
+                            wpac_init.push({widget: 'Review', id: 21720, limit:5});
+                            (function() {
+                            if ('WIDGETPACK_LOADED' in window) return;
+                            WIDGETPACK_LOADED = true;
+                            var mc = document.createElement('script');
+                            mc.type = 'text/javascript';
+                            mc.async = true;
+                            mc.src = 'https://embed.widgetpack.com/widget.js';
+                            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(mc, s.nextSibling);
+                            })();
+                            </script>
+                </section>
             </div>
         </section>
-
     </div>
 
     <!-- Footer -->
@@ -90,7 +123,13 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
-
+    <script>
+        $( window ).on( "load", function() {
+            $("#wpac-review").find(".wp-rightrow").hide();
+            $("#wpac-review").find(".wp-noreviews").addClass('firstReview');
+            $("#wpac-review").find(".firstReview").removeClass('wp-noreviews');
+        });
+    </script>
 </body>
 
 </html>

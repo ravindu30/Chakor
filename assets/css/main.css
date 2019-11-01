@@ -2796,7 +2796,7 @@ input, select, textarea {
 
 		ul.contact > li {
 			padding: 0;
-			margin: 1.5em 0 0 0;
+			margin: 0.75em 0 0 0;
 		}
 
 			ul.contact > li:first-child {
@@ -3908,3 +3908,4 @@ input, select, textarea {
 			}
 
 		}
+		#wpac-review * {color:#fff !important;}

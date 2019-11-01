@@ -57,7 +57,7 @@
                     #resp-header > nav > ul > li a.active {
                         color: #ffffff;
                     }
-
+                    
     @media screen and (max-width: 736px) {
 
         #resp-header {
@@ -163,5 +163,12 @@
       .menu-position{
           display: flex !important;
       }
+    }
+
+    .firstReview{
+        color: #999!important;
+        text-align: center!important;
+        font-size: 14px!important;
+        padding: 60px 0!important;
     }
    
