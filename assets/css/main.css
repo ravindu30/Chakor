@@ -3438,28 +3438,34 @@ input, select, textarea {
 
 			#header {
 				display: block;
-				padding: 0 2em;
+				padding: 0 0;
 				text-align: left;
 			}
 
 				#header .title {
 					font-size: 1.25em;
-					padding: 1em 0;
+					padding: 1em 1em;
 				}
 
 				#header > nav {
 					border-top: solid 1px rgba(255, 255, 255, 0.15);
-					text-align: inherit;
+					text-align: center;
+					padding-bottom: 10px;
 				}
 
 					#header > nav > ul > li {
-						margin-left: 1.5em;
+						margin-left: 0.75em;
 					}
 
 						#header > nav > ul > li a {
-							height: 6em;
+							height: 4em;
 							line-height: 6em;
 						}
+
+						#header > nav > ul > li:first-child {
+							margin-left: 0.75em;
+						}
+						
 
 		}
 
